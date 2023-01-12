@@ -22,5 +22,9 @@ myMessage.Ervthmatessera();
 Taskfive mySeconds = new Taskfive();
 mySeconds.Ervthmapente();
 
+//Task five
+Taskseven myTemp = new Taskseven();
+myTemp.Ervthmaepta();
+
 
 Console.ReadLine();

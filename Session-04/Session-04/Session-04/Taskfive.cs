@@ -16,7 +16,7 @@ namespace Session_04
             int days = randomNumber / 86400;
             int years = randomNumber / 31556952;
 
-            Console.WriteLine(" 63,113,904 seconds is... " + " Minutes: " + minutes +" ,Hours: "+ hours +" ,Days: "+ days +" ,Years: "+ years);
+            Console.WriteLine(" 63,113,904 seconds is... " + " Minutes:" + minutes +" ,Hours:"+ hours +" ,Days:"+ days +" ,Years:"+ years);
 
         }
     }
