@@ -18,5 +18,9 @@ myNum.Ervthmatria();
 Taskfour myMessage = new Taskfour();
 myMessage.Ervthmatessera();
 
+//Task five
+Taskfive mySeconds = new Taskfive();
+mySeconds.Ervthmapente();
+
 
 Console.ReadLine();
