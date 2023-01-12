@@ -7,5 +7,7 @@ Taskone helloName = new Taskone();
 Console.WriteLine(helloName.ErvthmaEna());
 
 //Task Two
+Tasktwo myNumbers = new Tasktwo();
+myNumbers.Ervthmadyo();
 
 Console.ReadLine();
