@@ -22,7 +22,11 @@ myMessage.Ervthmatessera();
 Taskfive mySeconds = new Taskfive();
 mySeconds.Ervthmapente();
 
-//Task five
+//Task six
+Tasksix myDotNetLib = new Tasksix();
+myDotNetLib.Ervthmaexi();
+
+//Task seven
 Taskseven myTemp = new Taskseven();
 myTemp.Ervthmaepta();
 
