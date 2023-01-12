@@ -10,4 +10,8 @@ Console.WriteLine(helloName.ErvthmaEna());
 Tasktwo myNumbers = new Tasktwo();
 myNumbers.Ervthmadyo();
 
+//Task Two
+Taskthree myNum = new Taskthree();
+myNum.Ervthmatria();
+
 Console.ReadLine();
