@@ -8,5 +8,9 @@ namespace Session_05
 {
     internal class PrimeNumbers
     {
+        public void PrimeNum()
+        {
+
+        }
     }
 }
