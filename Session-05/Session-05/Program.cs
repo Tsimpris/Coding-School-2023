@@ -13,6 +13,10 @@ Console.WriteLine(number.TwoChoises());
 PrimeNumbers pnumber = new PrimeNumbers();
 pnumber.PrimeNum();
 
+//Task four
+MultiplicationArrays my2DArray = new MultiplicationArrays();
+my2DArray.MulArrays();
+
 //Task five
 CustomSortMethod mySort = new CustomSortMethod();
 mySort.CusSortMet();

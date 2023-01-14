@@ -10,6 +10,7 @@ namespace Session_05
     {
         public void PrimeNum() //change void
         {
+            Console.WriteLine("\n");
             Console.WriteLine("Please enter an integer number:");
             var numString = Console.ReadLine();
             int n = Convert.ToInt32(numString);
