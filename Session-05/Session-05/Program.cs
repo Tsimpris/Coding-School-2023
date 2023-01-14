@@ -9,4 +9,10 @@ Console.WriteLine(myName.Returnname());
 NumberTwoChoices number = new NumberTwoChoices();
 Console.WriteLine(number.TwoChoises());
 
-//
+//Task three
+PrimeNumbers pnumber = new PrimeNumbers();
+pnumber.PrimeNum();
+
+//Task five
+CustomSortMethod mySort = new CustomSortMethod();
+mySort.CusSortMet();
