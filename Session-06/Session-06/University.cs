@@ -42,7 +42,10 @@ namespace Session_06
             ScheduledCourse = scheduledCourse;
         }
 
-
+        public void GetStudents() { }
+        public void GetCourses() { } 
+        public void GetGrades() { }
+        public void SetSchedule(Guid courseID,Guid ProfessorID,DateTime datetime) { }
 
 
     }
