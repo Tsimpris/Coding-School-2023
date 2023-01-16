@@ -33,6 +33,7 @@ namespace Session_06
         }
 
         public void Teach(Course course, DateTime datime) { }
-        public void SetGrade(Grade grade) { }
+        public void SetGrade (Guid studentID, Guid courseID, Grade grade) { }
+        public void GetName() { }
     }
 }
