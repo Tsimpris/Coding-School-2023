@@ -15,7 +15,9 @@ namespace Session_07
             Messages = new Message[1000];
         }
 
-        public void ReadAll() { }
+        public void ReadAll() {
+            
+        }
         public void Clear() { }
 
         //i'll come back later

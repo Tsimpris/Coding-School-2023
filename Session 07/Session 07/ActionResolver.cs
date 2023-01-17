@@ -8,5 +8,23 @@ namespace Session_07
 {
     public class ActionResolver
     {
+
+        // PROPERTIES
+        public MessageLogger Logger { get; set; }
+
+        // CTOR
+        public ActionResolver()
+        {
+
+        }
+
+        // METHODS
+        public ActionResponse Execute(ActionRequest request)
+        {
+
+
+            return null;
+        }
     }
+
 }
