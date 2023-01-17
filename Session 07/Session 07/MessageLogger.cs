@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Session_07
 {
-    internal class MessageLogger
-    {
+    public class MessageLogger
+    {      
+        public Message[] Messages { get; set; }
+
+        public MessageLogger() 
+        {
+            Messages = new Message[1000];
+        }
+
+        public void ReadAll() { }
+        public void Clear() { }
+
+        //i'll come back later
+        //public string Write(Message) { }
     }
 }
