@@ -16,7 +16,7 @@ namespace Session_07
         public Message() { }
         public Message(Guid id)
         {
-            ID = id;
+            ID = Guid.NewGuid();
         }
 
         public Message(Guid id, DateTime timeStamp)
