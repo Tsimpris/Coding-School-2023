@@ -11,7 +11,7 @@ namespace Session_07
     {
         public Guid ID { get; set; }
         public DateTime TimeStamp { get; set; }
-        public string? MessageText { get; set; }  //Message in exercise pronunciation
+        public string? MessageText { get; set; }  //Message in exercise pronunciation (property name can not be the same name as class name!)
 
         public Message() { }
         public Message(Guid id)

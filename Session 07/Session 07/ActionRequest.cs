@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Session_07
 {
+    public enum ActionEnum
+    {
+        Convert,
+        Uppercase,
+        Reverse
+    }
     public class ActionRequest
     {
-        public enum ActionEnum
-        {
-            Convert,
-            Uppercase,
-            Reverse
-        }
+        
         public Guid RequestID { get; set; }
         public string? Input { get; set; }
         public ActionEnum Action { get; set; }
