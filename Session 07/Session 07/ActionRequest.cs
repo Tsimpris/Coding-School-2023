@@ -6,23 +6,24 @@ using System.Threading.Tasks;
 
 namespace Session_07
 {
-    public enum ActionEnum
+
+    public class ActionEntity
     {
-        Convert,
-        Uppercase,
-        Reverse
-    }
-    public class ActionRequest
-    {
-        
+
         public Guid RequestID { get; set; }
-        public string? Input { get; set; }
+    }
+
+
+    public class ActionRequest : ActionEntity
+    {
+
+        public string Input { get; set; }
         public ActionEnum Action { get; set; }
 
-        public ActionRequest() { 
-            RequestID= Guid.NewGuid();
+        public ActionRequest()
+        {
+            RequestID = Guid.NewGuid();
         }
-
 
     }
 }

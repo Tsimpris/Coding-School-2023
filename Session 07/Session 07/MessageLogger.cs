@@ -29,7 +29,7 @@ namespace Session_07
 
                 if (message != null)
                 {
-                    Console.WriteLine(message.MessageText);
+                    Console.WriteLine(message.Text);
                 }
 
             }

@@ -8,13 +8,18 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace Session_07
 {
+
     public class Message
     {
+
         public Guid ID { get; set; }
         public DateTime TimeStamp { get; set; }
-        public string? MessageText { get; set; }  //Message in exercise pronunciation (property name can not be the same name as class name!)
 
-        public Message() { 
+        // Change from class diagram: Message property cannot be the same as class name
+        public string Text { get; set; }
+
+        public Message()
+        {
             ID = Guid.NewGuid();
         }
 
@@ -22,16 +27,7 @@ namespace Session_07
         {
             ID = Guid.NewGuid();
             TimeStamp = DateTime.Now;
-            MessageText = text;
+            Text = text;
         }
-
-
-
-        //public Message(Guid id, DateTime timeStamp, string messageText)
-        //{
-        //    ID = id;
-        //    TimeStamp = timeStamp;
-        //    MessageText = messageText;
-        //}
     }
 }
