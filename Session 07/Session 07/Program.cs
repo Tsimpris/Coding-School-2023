@@ -1,9 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-// See https://aka.ms/new-console-template for more information
 using Session_07;
 
-Console.WriteLine("Hello, World!");
 
 //Shape shape;
 
@@ -22,7 +20,7 @@ ActionResponse response = new ActionResponse();
 
 ActionResolver resolver = new ActionResolver();
 
-//response = resolver.Execute(request);
+response = resolver.Execute(request);
 
 // DISPLAY MESSAGES FROM LOGGER
 //foreach (Message message in resolver.Logger.) { 
