@@ -27,6 +27,10 @@ namespace Session_07
             response.ResponseID = Guid.NewGuid();
             response.RequestID = request.RequestID;
 
+            MessageLogger logger = new MessageLogger();
+
+            logger.Write(new Message(""));
+
             try //
             {
                 switch (request.Action)

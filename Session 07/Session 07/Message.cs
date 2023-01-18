@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Session_07
 {
@@ -13,23 +14,24 @@ namespace Session_07
         public DateTime TimeStamp { get; set; }
         public string? MessageText { get; set; }  //Message in exercise pronunciation (property name can not be the same name as class name!)
 
-        public Message() { }
-        public Message(Guid id)
-        {
+        public Message() { 
             ID = Guid.NewGuid();
         }
 
-        public Message(Guid id, DateTime timeStamp)
+        public Message(string text)
         {
-            ID = id;
-            TimeStamp = timeStamp;
+            ID = Guid.NewGuid();
+            TimeStamp = DateTime.Now;
+            MessageText = text;
         }
 
-        public Message(Guid id, DateTime timeStamp, string messageText)
-        {
-            ID = id;
-            TimeStamp = timeStamp;
-            MessageText = messageText;
-        }
+
+
+        //public Message(Guid id, DateTime timeStamp, string messageText)
+        //{
+        //    ID = id;
+        //    TimeStamp = timeStamp;
+        //    MessageText = messageText;
+        //}
     }
 }
