@@ -12,7 +12,9 @@ namespace Session_07
         public Guid ResponseID { get; set; }
         public string Output { get; set; }
 
-        public ActionResponse() { }
+        public ActionResponse() {
+            ResponseID= Guid.NewGuid();
+        }
 
     }
 }
