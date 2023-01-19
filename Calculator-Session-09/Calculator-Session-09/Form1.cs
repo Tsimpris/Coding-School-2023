@@ -6,5 +6,17 @@ namespace Calculator_Session_09
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "0")
+            {
+                textBox1.Text = "0";
+            }
+            else
+            {
+                textBox1.Text += "0";
+            }
+        }
     }
 }
