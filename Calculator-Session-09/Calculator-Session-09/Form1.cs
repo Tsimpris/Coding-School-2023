@@ -18,5 +18,13 @@ namespace Calculator_Session_09
                 textBox1.Text += "0";
             }
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (!textBox1.Text.Contains("."))
+            {
+                textBox1.Text += ".";
+            }
+        }
     }
 }
