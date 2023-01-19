@@ -2,6 +2,10 @@ namespace Calculator_Session_09
 {
     public partial class Form1 : Form
     {
+        private decimal valueFirst = 0.0m;
+        private decimal valueSecond = 0.0m;
+        private decimal result = 0.0m;
+        private string operators = "+";
         public Form1()
         {
             InitializeComponent();
@@ -144,6 +148,62 @@ namespace Calculator_Session_09
             else
             {
                 textBox1.Text = "-" + textBox1.Text;
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            valueFirst = decimal.Parse(textBox1.Text);
+            textBox1.Clear();
+            operators = "-";
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            valueFirst = decimal.Parse(textBox1.Text);
+            textBox1.Clear();
+            operators = "+";
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            valueFirst = decimal.Parse(textBox1.Text);
+            textBox1.Clear();
+            operators = "/";
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            valueFirst = decimal.Parse(textBox1.Text);
+            textBox1.Clear();
+            operators = "*";
+        }
+        
+        //Equal Button
+        private void button12_Click(object sender, EventArgs e)
+        {
+            switch (operators)
+            {
+                case "-":
+                    valueSecond = decimal.Parse(textBox1.Text);
+                    result = valueFirst - valueSecond;
+                    textBox1.Text = result.ToString();
+                    break;
+                case "+":
+                    valueSecond = decimal.Parse(textBox1.Text);
+                    result = valueFirst + valueSecond;
+                    textBox1.Text = result.ToString();
+                    break;
+                case "*":
+                    valueSecond = decimal.Parse(textBox1.Text);
+                    result = valueFirst * valueSecond;
+                    textBox1.Text = result.ToString();
+                    break;
+                case "/":
+                    valueSecond = decimal.Parse(textBox1.Text);
+                    result = valueFirst / valueSecond;
+                    textBox1.Text = result.ToString();
+                    break;
             }
         }
     }
