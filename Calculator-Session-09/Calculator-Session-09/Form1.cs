@@ -134,5 +134,17 @@ namespace Calculator_Session_09
                 textBox1.Text += "9";
             }
         }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Contains("-"))
+            {
+                textBox1.Text = textBox1.Text.Trim('-');
+            }
+            else
+            {
+                textBox1.Text = "-" + textBox1.Text;
+            }
+        }
     }
 }
