@@ -206,5 +206,12 @@ namespace Calculator_Session_09
                     break;
             }
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            valueFirst = 0.0m;
+            valueSecond = 0.0m;
+            textBox1.Text = "0";
+        }
     }
 }
