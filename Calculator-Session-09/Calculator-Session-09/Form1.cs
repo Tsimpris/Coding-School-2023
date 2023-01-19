@@ -1,4 +1,4 @@
-namespace Session_09_2
+namespace Calculator_Session_09
 {
     public partial class Form1 : Form
     {
