@@ -2,6 +2,7 @@ namespace Session_10
 {
     public partial class Form1 : Form
     {
+        private University _university;
         public Form1()
         {
             InitializeComponent();
@@ -9,7 +10,7 @@ namespace Session_10
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            List<University> univeristy= new List<University>();
+            List<University> _universit = new List<University>();
             University university1 = new University()
             {
                 Students = "Tsimpris",
@@ -26,10 +27,10 @@ namespace Session_10
                 //university1.ScheduledCourses = ;
             };
 
-            univeristy.Add(university1);
-            univeristy.Add(university2);
+            _universit.Add(university1);
+            _universit.Add(university2);
 
-            dataGridView1.DataSource = univeristy;
+            dataGridView1.DataSource = _universit;
         }
     }
 }
