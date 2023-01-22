@@ -10,8 +10,8 @@ namespace Session_10
     {
 
         public string Students{ get; set; }
-        public int Grades { get; set; }
         public string Courses { get; set; }
+        public int Grades { get; set; }
         public DateTime ScheduledCourses { get; set; }
         //Grades, Courses and ScheduledCourses
     }
