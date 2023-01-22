@@ -41,5 +41,10 @@ namespace Session_10
             Serializer serializer = new Serializer();
             serializer.SerializeToFile(_university, "test.json");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -25,6 +25,13 @@ namespace Session_10.Libs
 
             File.WriteAllText(fileName, jsonString);
         }
+        public T Deserialize<T>(string fileName)
+        {
 
+            string jsonString = File.ReadAllText(fileName);
+            T? obj = JsonSerializer.Deserialize<T>(jsonString);
+
+            return obj;
+        }
     }
 }
