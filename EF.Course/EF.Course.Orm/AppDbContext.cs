@@ -1,4 +1,5 @@
 ﻿using EF.Course.Model;
+using EF.Course.Orm.Configurations;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,10 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace EF.Course.Orm {
-    public class TodoContext : DbContext {
+    public class AppDbContext : DbContext {
         public DbSet<Todo> Todos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
+
+            modelBuilder.ApplyConfiguration(new TodoConfiguration());
             base.OnModelCreating(modelBuilder);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
